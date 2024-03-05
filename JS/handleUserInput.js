@@ -1,6 +1,6 @@
 async function handleUserInput(userInput) {
     try {
-      const response = await fetch('https://zbrassard954-f9dfd023-9271-4d41-8bb6-a7c490cf4491.socketxp.com/michel/prompt', {
+      const response = await fetch('ur url', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
