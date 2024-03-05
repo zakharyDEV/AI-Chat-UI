@@ -1,0 +1,79 @@
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Body styles */
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #262626; /* Dark background */
+  font-size: 16px; /* Increase base font size for larger elements */
+}
+
+/* Settings container styles */
+
+.settings-container {
+  background-color: #1E1E1E; /* Dark container background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 800px; /* Fixed width for container */
+  margin: 0 auto; /* Center horizontally */
+  text-align: center;
+}
+
+/* Setting element styles */
+
+.setting {
+  margin-bottom: 25px; /* Adjust spacing between settings */
+}
+
+.setting label {
+  display: block;
+  margin-bottom: 10px; /* Adjust label spacing */
+  font-size: 18px; /* Increase label font size */
+}
+
+/* Form element styles */
+
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px; /* Match base font size */
+}
+
+input[type="radio"] {
+  margin-right: 10px; /* Adjust spacing between radio buttons */
+}
+
+button[type="submit"] {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 30px; /* Increase button size */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px; /* Match base font size */
+  margin-top: 20px; /* Adjust button spacing */
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049; /* Green hover effect */
+}
+
+@media (max-width: 768px) {
+  .settings-container {
+    max-width: 90%; /* Adjust container width for smaller screens */
+  }
+}

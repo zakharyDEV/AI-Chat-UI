@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-text="title">Interactive Chat with MichelAI</title> <link rel="stylesheet" href="../CSS/chat.css">
+  <link rel="stylesheet" href="../CSS/popup.css">
+  <link rel="stylesheet" href="../CSS/sidebar.css">
+  <link rel="stylesheet" href="../CSS/codeformat.css">
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h4 data-text="michelai">MichelAI</h4> <ul id="sidebar-menu">
+        <li data-text="newconversation">New Conversation</li>
+        <li data-text="savedconversations">Saved Conversations</li>
+      </ul>
+      <div class="bottom-sb">
+        <ul>
+          <li><a href="settings.html" style="text-decoration: none; color: white;" data-text="settings">Settings</a></li>
+          <li><a href="documentation.html" style="text-decoration: none; color: white;" data-text="apidoc">API & Documentation</a></li>
+          <li><a href="help.html" style="text-decoration: none; color: white;" data-text="help">Help</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="chat">
+      <div class="chat-header">
+        <h3 data-text="conversationh">Chat with MichelAI</h3>
+      </div>
+      <div class="chat-history" id="chat-history">
+        <p class="user">Hey, how can I help you?</p>
+        <p class="ai">Hi there! I'm MichelAI. I'm here to assist you with any questions or tasks you may have.</p>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Type your message here...">
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="openPopup()">
+          <img src="D:\m2\img\gear.avif" alt="Gear Icon" style="width: 20px; height: 20px;">
+        </button>
+        <button onclick="Searchl()">
+          <img src="D:\m2\img\loupe.avif" alt="loupe Icon" style="width: 20px; height: 20px;">
+        </button>
+      </div>
+    </div>
+  </div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+          <span class="popup-close" onclick="closePopup()">&times;</span>
+          <h4 data-text="aisettings">AI Settings</h4>
+          <form id="ai-settings-form">
+            <div class="label-container">
+            <label for="ai-name" data-text="ainame">AI Name: </label>
+            <span class="dice-emoji" onclick="addRandomValue('ai-name')">🎲</span>
+        </div>
+            <input type="text" id="ai-name" name="aiName" required placeholder="Enter a friendly name for your AI" value="Michel">
+            <div class="label-container">
+            <label for="ai-description" data-text="aidescription">AI Description: </label>
+            <span class="dice-emoji" onclick="addRandomValue('ai-description')">🎲</span>
+        </div>
+            <textarea id="ai-description" name="aiDescription" required placeholder="Enter a detailed description of your AI"></textarea>
+            <div class="label-container">
+            <label for="ai-tone" data-text="aicone">AI Tone: </label>
+            <span class="dice-emoji" onclick="addRandomValue('ai-tone')">🎲</span>
+        </div>
+            <textarea type="text" id="ai-tone" name="aiTone" required placeholder="Describe your AI's overall tone (e.g., Informative, Friendly, Formal)"></textarea>
+            <div class="label-container">
+            <label for="ai-context" data-text="aicontext">AI Context: </label>
+            <span class="dice-emoji" onclick="addRandomValue('ai-context')">🎲</span>
+        </div>
+            <textarea id="ai-context" name="aiContext" required placeholder="Describe the environment in which your AI will operate"></textarea>
+            <div class="label-container">
+            <label for="ai-vocabulary" data-text="aivocabulary">AI Vocabulary: </label>
+            <span class="dice-emoji" onclick="addRandomValue('ai-vocabulary')">🎲</span>
+        </div>
+            <textarea type="text" id="ai-vocabulary" name="aiVocabulary" required placeholder="Define any specific terms your AI will use"></textarea>
+            <label for="ai-memory" data-text="aimemory">AI Memory:</label>
+            <textarea id="ai-memory" name="aiMemory" placeholder="Store information your AI will remember"></textarea>
+      
+            <button type="submit" data-text="savesettings">Save Settings</button>
+          </form>
+        </div>
+      </div>
+      
+      
+      
+      
+<script>
+// Function definitions
+let conversations = [];
+// Load conversations from local storage on page load
+try {
+  conversations = JSON.parse(localStorage.getItem("conversations")) || [];
+} catch (error) {
+  console.error("Error loading conversations from local storage:", error);
+  conversations = [];
+}
+</script>
+<script src="../JS/sendMessage.js"></script>
+<script src="../JS/handleUserInput.js"></script>
+<script src="../JS/getLanguage.js"></script> 
+<script src="../JS/displayErrorMessageToUser.js"></script>
+<script src="../JS/openPopup.js"></script> <!--This is used to open and close the ai settings popup-->
+<script src="../JS/createCodeBlockIfNeeded.js"></script>
+<script src="../JS/displayMessage.js"></script>
+<script src="../JS/createNewConversation.js"></script>
+<script src="../JS/loadConversation.js"></script>
+<script src="../JS/getConversationIdFromUI.js"></script>
+<script src="../JS/addRandomValue.js"></script>
+<script src="../JS/saveAiSettings.js"></script><!--Save and load the ai settings from local storage-->
+<script src="../JS/language.js"></script> <!--Only needed for the multi language support Currently supports english french spanish-->
+</body>
+</html>

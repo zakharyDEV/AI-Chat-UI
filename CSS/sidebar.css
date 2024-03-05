@@ -1,0 +1,38 @@
+.sidebar {
+    width: 200px; /* Maintain width for larger screens */
+    padding: 20px;
+    background-color: #333333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  
+    @media only screen and (max-width: 768px) {
+      width: 100%; /* Change width to 100% on mobile */
+      position: fixed; /* Make sidebar fixed on mobile */
+      top: 0; /* Position sidebar at the top */
+      left: 0; /* Position sidebar on the left */
+      height: 100vh; /* Set height to 100% of viewport height */
+      z-index: 10; /* Set higher z-index to display over other elements */
+      transform: translateX(-100%); /* Hide sidebar initially */
+      transition: transform 0.3s ease-in-out; /* Add smooth transition effect */
+    }
+  }
+  
+
+.bottom-sb {
+    margin-top: auto;
+}
+.sidebar h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar li {
+    margin-bottom: 10px;
+}

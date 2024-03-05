@@ -1,0 +1,118 @@
+.chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.chat-header {
+    background-color: #1E1E1E; 
+    padding: 20px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            .chat-header h3 {
+                font-size: 1.5rem;
+                color: white;
+                text-align: left;
+            }
+            .chat-history {
+                flex: 1;
+                overflow-y: scroll;
+                padding: 20px;
+                white-space: pre-wrap; /* Preserves whitespace and allows wrapping */
+                word-wrap: break-word;
+            }
+            .chat-history p {
+                font-size: 0.9rem;
+                margin: 0;
+                margin-bottom: 10px;
+                white-space: pre-wrap; /* Preserves whitespace and allows wrapping */
+                word-wrap: break-word;
+            }
+            .chat-history p.user {
+                background-color: #333333; 
+                border-radius: 10px;
+                padding: 15px;
+                margin-right: 0;
+                margin-left: 0;
+                align-self: flex-start;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                white-space: pre-wrap; /* Preserves whitespace and allows wrapping */
+                word-wrap: break-word;
+                color: aliceblue;
+            }
+            .chat-history p.ai {
+                background-color: #333333; 
+                border-radius: 10px;
+                padding: 15px;
+                margin-right: 0;
+                color: aliceblue;
+                margin-left: 0;
+                align-self: flex-end;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                white-space: pre-wrap; /* Preserves whitespace and allows wrapping */
+                word-wrap: break-word;
+            }
+            .chat-input {
+                background-color: #333333; 
+                padding: 20px;
+                border-top: 1px solid #333333; 
+            }
+            .chat-input input[type="text"] {
+                padding: 10px;
+                width: 60vw;
+                font-size: 1rem;
+                background-color: #1E1E1E; 
+                color: white;
+                white-space: pre-wrap; /* Preserves whitespace and allows wrapping */
+                word-wrap: break-word;
+                
+            }
+            .chat-input button {
+                padding: 10px 20px;
+                font-size: 1rem;
+                border: none;
+                background-color: transparent;
+            }
+
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .chat {
+      flex-direction: column-reverse; /* Reverse order on mobile for better readability */
+    }
+  
+    .chat-header {
+      font-size: 1rem;
+    }
+  
+    .chat-history p {
+      font-size: 0.8rem;
+    }
+  
+    .chat-input input[type="text"] {
+      font-size: 0.9rem;
+    }
+  
+    .chat-input button {
+      font-size: 0.8rem;
+    }
+  }
+
+  .dice-emoji {
+    /* Adjust margin and padding as needed */
+    margin-left: 5px;
+    vertical-align: middle; /* Ensures alignment with text */
+  }
+  
+  .label-container {
+    display: flex; /* Arranges elements horizontally */
+  }
+  
+  label {
+    /* Remove width if needed, depending on your layout */
+    /* width: 120px; */
+    line-height: 20px;
+    margin-right: 5px; /* Add margin for spacing */
+    vertical-align: middle;
+  }
+  

@@ -1,0 +1,251 @@
+/* Styles for code blocks */
+.code-block {
+  background-color: #2f3136;
+  color: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+/* Specific styles for different languages (optional) */
+.python .code-block {
+  /* Highlight keywords in a bold, slightly subdued blue */
+  .keyword {
+    font-weight: bold;
+    color: #007bff; /* Blue */
+  }
+
+  /* Emphasize built-in functions and classes with a brighter blue */
+  .built-in {
+    color: #00bfff; /* Deep Sky Blue */
+  }
+
+  /* Differentiate strings with a light green */
+  .string {
+    color: #00ff7f; /* Spring Green */
+  }
+
+  /* Highlight comments with a lighter gray for readability */
+  .comment {
+    color: #808080; /* Gray */
+  }
+
+  /* Optionally, use italics or a lighter font weight for comments */
+  .comment {
+    font-style: italic;
+    /* or */
+    font-weight: lighter;
+  }
+}
+
+
+.html .code-block {
+  /* Highlight HTML tags with a distinctive orange */
+  .tag {
+    color: #ff4500; /* Orange Red */
+  }
+
+  /* Emphasize attributes within tags with a lighter orange */
+  .attribute {
+    color: #ffa500; /* Orange */
+  }
+
+  /* Differentiate string values of attributes with a light green */
+  .attribute-value {
+    color: #00ff7f; /* Spring Green */
+  }
+
+  /* Optional: Style comments similarly to Python */
+  .comment {
+    color: #808080; /* Gray */
+    /* or */
+    font-style: italic;
+    /* or */
+    font-weight: lighter;
+  }
+}
+
+.css .code-block {
+  /* Highlight selectors in a light blue */
+  .selector {
+    color: #87ceeb; /* Sky Blue */
+  }
+
+  /* Emphasize properties with a slightly darker blue */
+  .property {
+    color: #00688b; /* Dark Blue */
+  }
+
+  /* Differentiate values with a subdued green */
+  .value {
+    color: #556b2f; /* Dark Olive Green */
+  }
+
+  /* Highlight comments with a lighter gray for readability */
+  .comment {
+    color: #808080; /* Gray */
+  }
+
+  /* Optionally, use italics or a lighter font weight for comments */
+  .comment {
+    font-style: italic;
+    /* or */
+    font-weight: lighter;
+  }
+}
+
+.cpp .code-block {
+  /* Highlight keywords in a bold, slightly subdued blue */
+  .keyword {
+    font-weight: bold;
+    color: #007bff; /* Blue */
+  }
+
+  /* Emphasize built-in functions and classes with a brighter blue */
+  .built-in {
+    color: #00bfff; /* Deep Sky Blue */
+  }
+
+  /* Differentiate strings with a light green */
+  .string {
+    color: #00ff7f; /* Spring Green */
+  }
+
+  /* Highlight comments with a lighter gray for readability */
+  .comment {
+    color: #808080; /* Gray */
+  }
+
+  /* Optionally, use italics or a lighter font weight for comments */
+  .comment {
+    font-style: italic;
+    /* or */
+    font-weight: lighter;
+  }
+}
+
+.javascript .code-block {
+  /* Highlight keywords in a bold, slightly subdued blue */
+  .keyword {
+    font-weight: bold;
+    color: #007bff; /* Blue */
+  }
+
+  /* Emphasize built-in functions and objects with a brighter blue */
+  .built-in {
+    color: #00bfff; /* Deep Sky Blue */
+  }
+
+  /* Differentiate strings with a light green */
+  .string {
+    color: #00ff7f; /* Spring Green */
+  }
+
+  /* Highlight comments with a lighter gray for readability */
+  .comment {
+    color: #808080; /* Gray */
+  }
+
+  /* Optionally, use italics or a lighter font weight for comments */
+  .comment {
+    font-style: italic;
+    /* or */
+    font-weight: lighter;
+  }
+}
+
+.php .code-block {
+  /* Highlight keywords in a bold, slightly subdued blue */
+  .keyword {
+    font-weight: bold;
+    color: #007bff; /* Blue */
+  }
+
+  /* Emphasize built-in functions and classes with a brighter blue */
+  .built-in {
+    color: #00bfff; /* Deep Sky Blue */
+  }
+
+  /* Differentiate strings with a light green */
+  .string {
+    color: #00ff7f; /* Spring Green */
+  }
+
+  /* Highlight variables with a light purple */
+  .variable {
+    color: #8a2be2; /* Blue Violet */
+  }
+
+  /* Highlight comments with a lighter gray for readability */
+  .comment {
+    color: #808080; /* Gray */
+  }
+
+  /* Optionally, use italics or a lighter font weight for comments */
+  .comment {
+    font-style: italic;
+    /* or */
+    font-weight: lighter;
+  }
+}
+
+.csharp .code-block {
+  /* Highlight keywords in a bold, slightly subdued blue */
+  .keyword {
+    font-weight: bold;
+    color: #007bff; /* Blue */
+  }
+
+  /* Emphasize built-in types and keywords with a brighter blue */
+  .built-in {
+    color: #00bfff; /* Deep Sky Blue */
+  }
+
+  /* Differentiate strings with a light green */
+  .string {
+    color: #00ff7f; /* Spring Green */
+  }
+
+  /* Highlight comments with a lighter gray for readability */
+  .comment {
+    color: #808080; /* Gray */
+  }
+
+  /* Optionally, use italics or a lighter font weight for comments */
+  .comment {
+    font-style: italic;
+    /* or */
+    font-weight: lighter;
+  }
+}
+
+.java .code-block {
+  /* Highlight keywords in a bold, slightly subdued blue */
+  .keyword {
+    font-weight: bold;
+    color: #007bff; /* Blue */
+  }
+
+  /* Emphasize built-in classes and interfaces with a brighter blue */
+  .built-in {
+    color: #00bfff; /* Deep Sky Blue */
+  }
+
+  /* Differentiate strings with a light green */
+  .string {
+    color: #00ff7f; /* Spring Green */
+  }
+
+  /* Highlight comments with a lighter gray for readability */
+  .comment {
+    color: #808080; /* Gray */
+  }
+
+  /* Optionally, use italics or a lighter font weight for comments */
+  .comment {
+    font-style: italic;
+    /* or */
+    font-weight: lighter;
+  }
+}
